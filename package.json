@@ -1,0 +1,11 @@
+{
+  "name": "flappy-kiro",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/game.test.mjs"
+  },
+  "dependencies": {
+    "fast-check": "^3.0.0"
+  }
+}

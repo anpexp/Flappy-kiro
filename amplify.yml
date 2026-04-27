@@ -1,0 +1,14 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "No build step required — static site"
+  artifacts:
+    baseDirectory: /
+    files:
+      - index.html
+      - game.js
+      - assets/**/*
+  cache:
+    paths: []
