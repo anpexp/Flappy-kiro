@@ -1023,26 +1023,3 @@ if (typeof module !== 'undefined') {
   };
 }
 
-// ESM exports for Node.js test runner (game.test.mjs)
-export {
-  CONFIG,
-  CANVAS_WIDTH,
-  CANVAS_HEIGHT,
-  HUD_HEIGHT,
-  PIPE_WIDTH,
-  StateMachine,
-  PhysicsEngine,
-  CollisionDetector,
-  ScoreManager,
-  GameState,
-  spawnPipe,
-  updatePipes,
-  applyDifficultyScaling,
-  spawnCloud,
-  updateClouds,
-  checkScoring,
-  updateParticles,
-  updateScorePopups,
-  resetGame,
-  FIXED_DT,
-};
