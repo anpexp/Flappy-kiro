@@ -385,7 +385,7 @@ const InputHandler = {
   init() {
     window.addEventListener('keydown', (e) => {
       if (e.code === 'Space') {
-        if (this.onFlap && !StateMachine.is('game_over')) this.onFlap();
+        if (this.onFlap) this.onFlap();
       } else if (e.code === 'Escape') {
         if (this.onPause) this.onPause();
       }
@@ -393,11 +393,11 @@ const InputHandler = {
 
     const canvas = document.getElementById('gameCanvas');
     canvas.addEventListener('click', () => {
-      if (this.onFlap && !StateMachine.is('game_over')) this.onFlap();
+      if (this.onFlap) this.onFlap();
     });
     canvas.addEventListener('touchstart', (e) => {
       e.preventDefault();
-      if (this.onFlap && !StateMachine.is('game_over')) this.onFlap();
+      if (this.onFlap) this.onFlap();
     }, { passive: false });
   },
 };

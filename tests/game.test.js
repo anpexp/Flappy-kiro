@@ -83,7 +83,7 @@ test('Property 3: Position integrates from velocity', () => {
 // Feature: flappy-kiro, Property 4: Delta-time scaling is proportional
 test('Property 4: Delta-time scaling is proportional', () => {
   fc.assert(fc.property(
-    fc.float({ min: 0.001, max: 0.1, noNaN: true }),
+    fc.float({ min: Math.fround(0.001), max: Math.fround(0.1), noNaN: true }),
     (dt) => {
       const ghosty = { x: 100, y: 100, prevY: 100, width: 48, height: 48, vy: 0, invincibilityFrames: 0, image: null };
       const prevVy = ghosty.vy;
